@@ -1,0 +1,142 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2); /* gradient background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container Card */
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  padding: 40px 50px;
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.7s ease forwards;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1f2937;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  font-size: 15px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #6366f1, #4338ca);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Users List */
+ul {
+  list-style: none;
+  margin-top: 25px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #f0f4ff, #e2e8f0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Delete Button in list */
+li button {
+  width: auto;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #f43f5e, #dc2626);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+li button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(244, 63, 94, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    padding: 30px 25px;
+  }
+
+  button, input {
+    padding: 12px;
+  }
+
+  li {
+    padding: 10px 12px;
+  }
+}
