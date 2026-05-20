@@ -139,3 +139,4 @@ Fetching stored users via backend API
 
 In this experiment, a complete full-stack application was successfully containerized using Docker. Docker Compose was used to orchestrate frontend, backend, and database services with proper networking and environment configuration. The application ran successfully inside containers and was accessible through the browser.
 Docker ensured platform-independent deployment and simplified the application setup process.
+The experiment demonstrated how microservice-style deployment can be efficiently managed using Docker Compose.
