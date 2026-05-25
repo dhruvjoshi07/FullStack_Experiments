@@ -36,8 +36,7 @@ Stores user-specific cart items Actions: Add to cart (User only) Remove from car
 Conclusion
 This project successfully demonstrates how Context API and Redux Toolkit can be combined in a React application to build a scalable, maintainable, and role-based system. The separation of authentication and application data improves clarity, performance, and real-world usability.
 
-How to Run:
-
+How to Run:::
 npm install
 npm run dev
  Local:   http://localhost:5173/
