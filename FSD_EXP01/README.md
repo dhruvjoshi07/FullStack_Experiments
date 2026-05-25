@@ -1,4 +1,5 @@
 Login Experiment – Context API & Redux Toolkit
+
 Project Overview
 This project is a React-based web application developed to demonstrate modern state management techniques using: React Context API for Authentication & Role Management Redux Toolkit for Product Catalog and Cart State Management The application supports role-based access control, where Admin and User have different permissions.
 
